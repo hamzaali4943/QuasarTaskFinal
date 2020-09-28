@@ -1,4 +1,5 @@
 {
+  "homepage": "https://hamzaali4943.github.io/QuasarTaskFinal/",
   "name": "quasar-task-final",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
@@ -7,7 +8,9 @@
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "predeploy": "quasar build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -24,7 +27,9 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^6.1.2"
+    "eslint-plugin-vue": "^6.1.2",
+    "gh-pages": "^3.1.0",
+    "i": "^0.3.6"
   },
   "browserslist": [
     "last 10 Chrome versions",
